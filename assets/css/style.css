@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        word-break: break-word;
+          font-family: "Poppins", sans-serif;
+
+    }
+:root{
+    --pink: #DF1C62;
+    --text_clr_A1A1A1 : #A1A1A1
+}
+.ct_text_clr_A1A1A1{
+    color: var(--text_clr_A1A1A1);
+}
+    ul {
+        padding-left: 0px;
+        margin-bottom: 0px;
+        list-style: none;
+    }
+
+    a,
+    a:hover {
+        text-decoration: none;
+    }
+
+    /* Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    /* Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+    }
+
+    /* All font Weight Css S */
+    .ct_fw_300 {
+        font-weight: 300;
+    }
+
+    .ct_fw_400 {
+        font-weight: 400;
+    }
+
+    .ct_fw_500 {
+        font-weight: 500;
+    }
+
+    .ct_fw_600 {
+        font-weight: 600;
+    }
+
+    .ct_fw_700 {
+        font-weight: 700;
+    }
+
+    .ct_fw_800 {
+        font-weight: 800;
+    }
+
+    .ct_fw_900 {
+        font-weight: 900;
+    }
+
+    /* All font Weight Css E */
+
+    /* all font size css S */
+    .ct_fs_14 {
+        font-size: 14px;
+    }
+
+    .ct_fs_16 {
+        font-size: 16px;
+    }
+
+    .ct_fs_18 {
+        font-size: 18px;
+    }
+
+    .ct_fs_20 {
+        font-size: 20px;
+    }
+
+    .ct_fs_24 {
+        font-size: 24px;
+    }
+     .ct_fs_26 {
+        font-size: 26px;
+    }
+
+    .ct_fs_28 {
+        font-size: 28px;
+    }
+
+    .ct_fs_40 {
+        font-size: 40px;
+    }
+
+    .ct_fs_22 {
+        font-size: 22px;
+    }
+
+    /* all font size css E */
+
+    /* Custom Scroll Css C */
+    .ct_custom_scroll::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    /* Track */
+    .ct_custom_scroll::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    .ct_custom_scroll::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    .ct_custom_scroll::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    /* Custom Scroll Css E */
+
+    .form-control:focus {
+        box-shadow: unset;
+        border-color: var(--black);
+    }
+
+    .ct_show_eye {
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color:#fff;
+    }
+
+    .ct_input_icon_left {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+    }
+
+    .ct_input_ps_40 {
+        padding-left: 40px;
+    }
+
+    .ct_input_pe_40 {
+        padding-right: 40px;
+    }
+
+    .ct_input_icon_left img {
+        width: 18px;
+        margin-top: -2px;
+    }
+
+    .ct_border_radius_15 {
+        border-radius: 15px;
+    }
+
+    .ct_border_radius_10 {
+        border-radius: 10px;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .ct_flex_1 {
+        flex: 1;
+    }
+
+    .ct_flex_shrink_0 {
+        flex-shrink: 0;
+    }
+
+    .ct_white_nowrap {
+        white-space: nowrap;
+    }
+
+    .ct_overlay_text {
+        width: 200px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .ct_para_scroll {
+        height: auto;
+        max-height: 240px;
+        overflow-y: auto;
+    }
+
+
+    .ct_minimise_cnt {
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    max-width: 400px;
+    width: auto;
+}
+
+.ct_white_space_normal {
+    white-space: normal;
+}
+.ct_text_upercase{
+    text-transform: uppercase;
+}
+
+
+/* Login css S */
+.ct_input:focus ~ i{
+    color: #000;
+}
+.ct_login_bg {
+    background: url(../img/loginbg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.ct_login_bg::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #00000099;
+}
+.ct_btn_outline{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+outline: none;
+gap: 10px;
+    border: 1px solid #FFFFFF33;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.ct_login_left {
+    background: url('../img/login_left.png');
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 20px);
+    margin: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 200px;
+    color: #fff;
+}
+
+.ct_login_left h4{
+    font-weight: 600;
+    margin-top: 24px;
+}
+
+.ct_right_login h4{
+    font-weight: 600;
+    margin-bottom: 28px;
+    text-align: center;
+    color: #fff;
+    font-size: 28px;
+}
+.ct_hr{
+    border-color: #fff;
+    flex:1
+}
+.ct_mx_10{
+    margin-inline: 10px;
+}
+
+.ct_right_login {
+    padding-inline: 70px;
+    align-self: center;
+    height: auto;
+    max-height: calc(100dvh - 60px);
+    overflow-y: auto;
+}
+
+.ct_input{
+    height: 50px;
+    background-color: #FFFFFF1A;
+    border-radius: 10px;
+    color: #fff;
+    font-size:14px;
+    backdrop-filter: blur(20px);
+}
+.ct_input::placeholder{
+    color: #FFFFFFB8;
+}
+.ct_input:focus{
+   background-color: #fff;
+   border-color:red 
+}
+
+.ct_custom_btn{
+    background-color: var(--pink);
+    color: #fff;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .ct_custom_check .form-check-input{
+        width: 18px;
+        height: 18px;
+        background-color: transparent;
+    }
+
+    /* .ct_custom_check .form-check-input:checked[type="checkbox"] {
+        filter: invert(1);
+    } */
+
+    .ct_custom_check .form-check-input:checked {
+        background-color: transparent;
+        border-color: var(--pink);
+    }
+
+    .ct_custom_check .form-check-input:focus {
+        box-shadow: unset;
+        border-color: #282828;
+        vertical-align: middle;
+    }
+
+
+    .ct_social_login_btns .ct_btn_outline:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #df1c629e;
+       
+        transform: scaleX(0);
+        transition: all 0.3s ease;
+        border-radius: 10px;
+        z-index: -1;
+    }
+      .ct_social_login_btns .ct_btn_outline:hover:before{
+        transform: scale(1);
+       
+      }
+    
+
+      /* Login css E */
+
+      /* Onboarding screen css S */
+      .ct_onboarding_content{
+        text-align: center;
+        width: 100%;
+        max-width: 465px;
+        padding:30px;
+      }
+      .ct_onboarding_content h2{
+        font-size: 28px;
+        font-weight: 600;
+        color: #fff;
+        margin-bottom: 6px;
+      }
+      .ct_onboarding_content p{
+        font-size: 16px;
+        color: #A1A1A1;
+      }
+      .ct_onboaring_logo{
+        margin-bottom: 45px;
+      }
+      .ct_onboaring_logo img{
+        width: 100%;
+        max-width: 313px;
+        object-fit: contain;
+      }
+
+      .ct_onboarding_bg{
+        background: url('../img/loginbg.jpg');
+        background-size: cover;
+        background-position: center;
+       padding:40px;
+        width: 100%;
+
+        position: relative;
+        z-index: 1;
+      }
+      .ct_inner_onboarding{
+ display: flex;
+  min-height: 100vh;
+        align-items: center;
+        justify-content: center;
+      }
+      .ct_onboarding_bg:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+       
+        height: 100%;
+        background: url('../img/sparkel.png');
+        z-index: -1;
+          background-size: cover;
+        background-position: center;
+    
+      }
+      .ct_onboarding_bg:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.7;
+        z-index: -1;
+      }
+
+      .ct_instrument_content_main{
+        height: calc(100dvh - 104px);
+      }
+      .ct_pt_60{
+        padding-top: 60px;
+      }
+      /* Onboarding screen css E */
+
+   .ct_instrument_icon {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-inline: auto;
+    background-color: #D9D9D90D;
+        transition: 0.4s ease all;
+}
+      .ct_instrument_icon img{
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        filter: invert(1);
+      }
+
+      .ct_instrument_card h4{
+        margin-top: 40px;
+        font-size: 22px;
+        text-align: center;
+        color: #fff;
+      }
+
+      .ct_instrument_card {
+    background-color: #202020;
+    padding: 40px;
+    border-radius: 10px;
+    transition: 0.4s ease all;
+    border: 1px solid transparent;
+}
+.ct_instrument_card:hover .ct_instrument_icon{
+    background-color: var(--pink);
+}
+.ct_instrument_card.active{
+    border-color: var(--pink);
+}
+.ct_instrument_card:hover{
+    transform: translateY(-10px);
+    border: 1px solid var(--pink);
+}
+
+.ct_btn_w_465{
+    max-width: 465px;
+}
+.ct_text_pink{
+    color: var(--pink);
+}
+.ct_logo_2{
+    padding-inline: 12px;
+}
