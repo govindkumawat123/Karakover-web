@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>Karakover</title>
+  </head>
+  <body>
+    <section class="ct_onboarding_bg">
+      <div class="ct_logo_2">
+        <img src="assets/img/KARAKOVER.png" alt="" />
+      </div>
+      <div class="ct_instrument_content_main ct_pt_60">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+                <div class="text-center">
+                  <h2 class="text-white">Unlock Your Full Music Experience</h2>
+                  <p class="ct_text_clr_A1A1A1">
+                  Get unlimited access to songs, mixes, and powerful practice tools.
+                  </p>
+                </div>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <div class="col-lg-8 mb-4 mb-lg-0">
+                <h4 class="ct_fs_18 ct_fw_600 mb-3 text-white">Payment Method</h4>
+                <div class="ct_payment_method_bg">
+                     <div class="ct_radio-container">
+                        <div class="ct_radio-wrapper">
+                            <label class="ct_radio-button">
+                                <input id="option1" name="ct_radio-group" type="radio">
+                                <span class="ct_radio-checkmark"></span>
+                            </label>
+                            <div class="text-white">
+                                <p class=" mb-0 ">Credit / Debit Card</p>
+                                <small class="opacity-75">Pay securely using your credit or debit card.</small>
+                            </div>
+                        </div>
+                     
+                    </div>
+
+                    <form action="" class="ct_payment_method_form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2 text-white">First Name</label>
+                                    <input type="text" class="form-control ct_input border-0" placeholder="eg. John">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2 text-white">Last Name</label>
+                                    <input type="text" class="form-control ct_input border-0" placeholder="eg. Francisco">
+                                </div>
+                            </div>
+                             <div class="col-md-6">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2 text-white">Card Number</label>
+                                    <input type="text" class="form-control ct_input border-0" placeholder="XXXX-XXXX-XXXX-XXXX">
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2 text-white">Expiry Date</label>
+                                    <input type="text" class="form-control ct_input border-0" placeholder="MM/YYYY">
+                                </div>
+                            </div>
+                              <div class="col-md-3">
+                                <div class="form-group mb-3">
+                                    <label for="" class="mb-2 text-white">CVV</label>
+                                    <input type="text" class="form-control ct_input border-0" placeholder="000">
+                                </div>
+                            </div>
+                            
+
+                        </div>
+                    </form>
+
+                </div>
+                 <div class="ct_payment_method_bg mt-3">
+                     <div class="ct_radio-container">
+                        <div class="ct_radio-wrapper">
+                            <label class="ct_radio-button">
+                                <input id="option1" name="ct_radio-group" type="radio">
+                                <span class="ct_radio-checkmark"></span>
+                            </label>
+                            <div class="text-white">
+                                <p class=" mb-0 ">PayPal</p>
+                                <small class="opacity-75">Pay easily using your PayPal account.</small>
+                            </div>
+                        </div>
+                     
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0 ps-lg-5">
+                <div class="ct_payment_summery_bg">
+                    <h4 class="ct_fs_18 mb-3">Payment Summary</h4>
+                    <hr>
+
+                    <div class="ct_user_info">
+                        <p>Name: <span class="ct_fw_600">Delvert Mill</span></p>
+                        <p>Payment Date: <span class="ct_fw_600">10-Oct-2022</span></p>
+                        <p>Instrument Type: <span class="ct_fw_600">Guitar</span></p>
+                        <p>Duration: <span class="ct_fw_600">30 days</span></p>
+                    </div>
+                    <div class="mt-5">
+                        <p class="mb-2">Amount to be paid</p>
+                        <h2 class="ct_fs_35 ct_fw_600">$122.00</h2>
+                    </div>
+                </div>
+                <button class="ct_custom_btn mt-4 w-100" data-bs-toggle="modal" data-bs-target="#ct_pay_now">Pay Now</button>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Pay now modal S -->
+     <!-- Modal -->
+<div class="modal fade" id="ct_pay_now" tabindex="-1" aria-labelledby="ct_pay_nowLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+    
+      <div class="modal-body">
+        <img src="assets/img/check_icon.png" alt="">
+        <h4 class="ct_fs_18 text-center text-white mb-3">Payment Successful!</h4>
+
+        <div class="ct_payment_card mt-5 text-center">
+            <div class="ct_payment_icon mb-4">
+                <img src="assets/img/guitar.png" alt="">
+            </div>
+            <h2 class="ct_fs_25 ct_fw_600 ">$122.00</h2>
+            <p class="mb-0 opacity-75">10 Oct, 2022  10:42 PM</p>
+        </div>
+
+        <a href="song-with-instruments.html" class="ct_link_text d-block text-center mt-4 ct_fs_18">CONTINUE</a>
+      </div>
+     
+    </div>
+  </div>
+</div>
+    <!-- Pay now modal E -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
