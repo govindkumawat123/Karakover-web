@@ -1,5 +1,30 @@
+@media screen and (max-width:991px){
+    .ct_bottom_player{
+        margin-left: 0px;
+        width: 100%;
+    }
+}
 @media screen and (max-width:767px){
     .ct_onboarding_bg{
         padding-inline: 0px;
+    }
+    .ct_slider_overlay {
+        padding-inline: 24px;
+    }
+    .ct_ads_banner h4{
+        font-size: 28px;
+    }
+    .ct_view{
+        width: 40px;
+        height: 40px;
+    }
+    .ct_grids_2{
+        gap: 15px;
+    }
+    .ct_bottom_player{
+        flex-direction: column;
+    }
+    .ct_sogn_name_and_thumb{
+        width: 100%;
     }
 }

@@ -9,6 +9,9 @@
           font-family: "Poppins", sans-serif;
 
     }
+    html,body{
+        min-height: 100vh;
+    }
 :root{
     --pink: #DF1C62;
     --text_clr_A1A1A1 : #A1A1A1
@@ -84,7 +87,7 @@
     }
 
     .ct_fs_20 {
-        font-size: 20px;
+        font-size: 20px !important;
     }
 
     .ct_fs_24 {
@@ -108,7 +111,9 @@
     .ct_fs_35{
         font-size: 35px;
     }
-
+.ct_px_28{
+    padding-inline: 28px;
+}
     /* all font size css E */
 
     /* Custom Scroll Css C */
@@ -118,7 +123,7 @@
 
     /* Track */
     .ct_custom_scroll::-webkit-scrollbar-track {
-        background: #f1f1f1;
+        background: #333;
     }
 
     /* Handle */
@@ -685,7 +690,7 @@ gap: 10px;
     height: 15px;
     margin-left: 5px;
   }
-  .ct_mix_btn{
+  .ct_mix_btn img{
       width: 15px;
     object-fit: contain;
     height: 15px;
@@ -749,3 +754,212 @@ gap: 10px;
     white-space: nowrap;
   }
     /* Payment Method css E */
+
+    /* Home page css S */
+    .ct_ads_slider{
+        margin-top: 15px;
+    }
+    .ct_ads_banner{
+        position: relative;
+       
+    }
+    .ct_ads_banner:before{
+        content: "";
+        position: absolute;
+        inset: 0px;
+        background: linear-gradient(90deg, #000000 17.35%, rgba(0, 0, 0, 0) 100%);
+        z-index: 1;
+
+    }
+    .ct_ads_banner img{
+        width: 100%;
+        height: 342px;
+        object-fit: cover;
+        border-radius: 3px;
+    }
+    .ct_ads_banner h4{
+        font-size: 35px;
+        color: #fff;
+        font-weight: 600;
+    }
+   .ct_ads_banner p {
+    color: #fff;
+    max-width: 359px;
+    font-weight: 300;
+}
+.ct_slider_overlay {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-inline: 89px;
+    z-index: 7;
+}
+.ct_ads_slider .owl-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ct_ads_slider .owl-dots .owl-dot span {
+    margin: 4px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+.ct_ads_slider .owl-dots .owl-dot.active span ,.ct_ads_slider .owl-dots .owl-dot:hover span{
+    background-color: #fff !important;
+}
+
+.ct_drums_overlay_cnt{
+    position: absolute;
+    bottom: 17px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.ct_drums_overlay_cnt small {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+.ct_drums_overlay_cnt span{
+    background-color: #FFFFFF30;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ct_view{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #1E1E1E;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-inline: auto;
+}
+.ct_drums_slider{
+    overflow-x: hidden;
+}
+
+.ct_grids_2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    align-items: center;
+}
+.ct_fs_12{
+    font-size: 12px;
+}
+
+.ct_text_clr_FCFCFCA6{
+    color: #FCFCFCA6;
+}
+
+.ct_coards_text{
+    width: 16px;
+    height: 16px;
+    border-radius: 5px;
+    background-color: #FFFFFF1F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.ct_sogn_name_and_thumb{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.ct_sogn_name_and_thumb img{
+    width: 64px;
+    height: 64px;
+    border-radius: 3px;
+}
+.ct_bottom_player{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: auto;
+}
+
+
+.video-progress-wrap{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    width:100%;
+    max-width: 500px;
+    color:#fff;
+    font-size:14px;
+    margin-inline: auto;
+}
+
+.progress-bar{
+    flex:1;
+    height:6px;
+    background:#4a4a4a;
+    border-radius:50px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:0%;
+    height:100%;
+    background:#ff007f;
+    border-radius:50px;
+    transition:width 0.2s linear;
+}
+.ct_bottom_player {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #1E1D1D;
+    padding: 15px 28px;
+    border-radius: 0px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: calc(100% - 236px);
+    margin-left: 236px;
+}
+.ct_inner_main_scroll {
+    max-height: calc(100dvh - 266px);
+    overflow-y: auto;
+    height: auto;
+}
+    /* Home page css E */
+
+    /* Drums Page css S */
+    .ct_drums_bg_black{
+        background-color: #000000B2;
+        padding: 47px 40px;
+
+    }
+
+    .ct_drums_song_palyer img{
+        width: 56px;
+        height: 56px;
+        object-fit: cover;
+        border-radius: 2px;
+        flex-shrink: 0;
+    }
+    .ct_drums_song_palyer{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .ct_badge{
+        padding: 4px 18px;
+        background-color: #FFFFFF2E;
+        border-radius: 100px;
+        color: #fff;
+
+    }
+    /* Drums Page css E */
