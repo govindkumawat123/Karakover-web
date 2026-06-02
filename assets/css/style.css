@@ -680,10 +680,7 @@ gap: 10px;
     justify-content: center;
 
   }
-  .ct_play_btn{
-    border: 2px solid #fff;
-    background-color: transparent;
-  }
+  
   .ct_play_btn img{
     width: 15px;
     object-fit: contain;
