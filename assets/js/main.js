@@ -7,6 +7,13 @@ $(document).ready(function () {
     $("main").removeClass("ct_show");
   });
 
+  $(".ct_setting_filter_btn").click(function () {
+    $(".ct_setting_popup").addClass("active");
+  });
+  $(".ct_close_btn121").click(function () {
+    $(".ct_setting_popup").removeClass("active");
+  });
+
 
   $(".ct_ads_slider").owlCarousel({
     loop: true,

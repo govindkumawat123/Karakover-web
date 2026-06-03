@@ -26,11 +26,11 @@
                <i class="fa-solid fa-xmark"></i>
             </div>
             <div class="ct_admin_logo">
-               <img src="assets/img/logo.png" alt="" />
+               <img src="assets/img/KARAKOVER.png" alt="" />
             </div>
             <ul class="ct_custom_scroll">
                <li>
-                  <a href="home.html" class="active">
+                  <a href="home.html">
                      <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.1615 23H16.0349H6.96506H4.83848C2.71855 23 1 21.3067 1 19.218V9.6321C1.00816 8.80963 1.40039 8.03672 2.06329 7.53681L9.3043 1.75383C10.5784 0.748723 12.3897 0.748723 13.6638 1.75383L20.9367 7.52634C21.5971 8.02828 21.9887 8.79991 22 9.62162V19.218C22 21.3067 20.2815 23 18.1615 23Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M10 18C10 17.1716 10.6716 16.5 11.5 16.5C12.3284 16.5 13 17.1716 13 18V23.5H10V18Z" fill="white"/>
@@ -40,7 +40,7 @@
                      >
                </li>
                <li>
-                  <a href="my-mix.html" >
+                  <a href="my-mix.html" class="active">
                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.33789 6C4.06693 3.01099 7.29864 1 11 1C16.5229 1 21 5.47715 21 11C21 16.5228 16.5229 21 11 21C7.29864 21 4.06693 18.989 2.33789 16M11 7L15 11L11 15M15 11H1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                      </svg>
@@ -73,11 +73,9 @@
                   <div class="d-flex justify-content-between w-100">
                      <div class="ct_top_heading_box">
                         <ul class="d-sm-flex d-none  gap-2  breadcrumb_custom">
-                            <li>
-                                <a href="home.html" class="ct_back_btn ct_fs_14"><i class="fa-solid fa-chevron-left"></i></a>
-                            </li>
+                          
                            <li class=""> 
-                             Drums Easy
+                          My Mix
                            </li>
                         </ul>
                      </div>
@@ -144,19 +142,172 @@
                   </div>
                </header>
                <div class="main-content-wrapper py-4 ct_px_28 pe-0">
-                   <div class="ct_px_28 mb-4">
-                     <div class="ct_search_input position-relative ">
+                   <div class="ct_px_28 ps-0 mb-4 position-relative">
+                    <div class="ct_search_input position-relative ">
                         <input type="text" class="form-control ct_input border-0 ct_input_ps_40" placeholder="Search" >
                         <i class="fa-solid fa-search ct_input_icon_left text-white"></i>
                     </div>
+                     <!--==================== when user click on search than show this filter list   ===================== -->
+                    <div class="dev-search-panel d-none">
+
+                        <div class="dev-search-header">
+                            <h3 class="dev-search-title">Recent Searches</h3>
+                            <button class="dev-clear-btn">CLEAR</button>
+                        </div>
+                        <div class="dev-search-list ct_custom_scroll">
+
+                            <div class="dev-search-item">
+                                <img src="assets/img/drums_1.png" class="dev-search-img">
+
+                                <div class="dev-search-content">
+                                    <h4 class="dev-search-name">Diaspora</h4>
+                                    <span class="dev-search-artist">Justin Bieber</span>
+                                </div>
+                            </div>
+
+                            <div class="dev-search-item">
+                                <img src="assets/img/drums_2.png" class="dev-search-img">
+
+                                <div class="dev-search-content">
+                                    <h4 class="dev-search-name">Mr. Morale & The Big Steppers</h4>
+                                    <span class="dev-search-artist">Kendrick Lamar</span>
+                                </div>
+                            </div>
+
+                            <div class="dev-search-item">
+                                <div class="dev-search-icon">
+                                <i class="fa-solid fa-search"></i>
+                                </div>
+
+                                <div class="dev-search-content">
+                                    <h4 class="dev-search-name">Mac Miller</h4>
+                                </div>
+                            </div>
+
+                            <div class="dev-search-item">
+                                <img src="assets/img/drums_1.png" class="dev-search-img">
+
+                                <div class="dev-search-content">
+                                    <h4 class="dev-search-name">Easy On Me</h4>
+                                    <span class="dev-search-artist">Vincent Fable</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                    </div>
 
-                   <div class="ct_inner_main_scroll ct_custom_scroll ct_px_28 ct_drums_bg_black" style="height: calc(100dvh - 266px);">
+                   <div class="ct_inner_main_scroll ct_custom_scroll ct_px_28 ct_drums_bg_black ct_me_28" style="height: calc(100dvh - 266px);">
 
                     <ul class="ct_drums_easy_list">
                         <li>
                            <div class="d-flex align-items-center gap-3">
                             <p class="mb-0 ct_text_clr_AFB6B2 ct_fw_600">1</p>
+                             <div class="ct_drums_song_palyer">
+                                <img src="assets/img/user_img_1.png" alt="">
+                                <div>
+                                    <h4 class="ct_fs_16 ct_fw_600 text-white mb-1">Mistletoe</h4>
+                                    <p class="mb-0 text-white opacity-75">Justin Bieber</p>
+                                </div>
+                            </div>
+                           </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="text-white text-nowrap">3:54</span>
+                                <button class="ct_play_btn">
+                                <img src="assets/img/play_icon.png" alt="">
+                            </button>
+                            <div class="dropdown ct_mix_dropdown">
+                                <i class="fa-solid fa-ellipsis text-white" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                 <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 6.8V13.6M14.8571 8.4L12.5 6L10.1429 8.4M7 12.4V16.4C7 16.8243 7.16556 17.2313 7.46026 17.5314C7.75496 17.8314 8.15466 18 8.57143 18H16.4286C16.8453 18 17.245 17.8314 17.5397 17.5314C17.8344 17.2313 18 16.8243 18 16.4V12.4" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                Share</a>
+                                </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" data-bs-target="#delete_modal" data-bs-toggle="modal">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.25643 8.67039L8.62703 17.1157C8.68972 17.5023 8.88492 17.8537 9.17786 18.1072C9.4708 18.3607 9.84245 18.4999 10.2266 18.5H12.3983M16.7429 8.67039L15.373 17.1157C15.3103 17.5023 15.1151 17.8537 14.8221 18.1072C14.5292 18.3607 14.1576 18.4999 13.7734 18.5H11.6017M10.717 11.9147V15.2557M13.283 11.9147V15.2557M6 8.67039H18M13.8013 8.67039V7.49256C13.8013 7.22931 13.6988 6.97685 13.5163 6.79071C13.3339 6.60457 13.0864 6.5 12.8283 6.5H11.1717C10.9136 6.5 10.6661 6.60457 10.4837 6.79071C10.3012 6.97685 10.1987 7.22931 10.1987 7.49256V8.67039H13.8013Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+
+                                        Delete</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 15.4063V16.1774C6 16.7934 6.23705 17.3842 6.65901 17.8197C7.08097 18.2553 7.65326 18.5 8.25 18.5H15.75C16.3467 18.5 16.919 18.2553 17.341 17.8197C17.7629 17.3842 18 16.7934 18 16.1774V15.4032M12 6.5V15.0161M9.375 12.3065L12 15.0161L14.625 12.3065" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+
+                                        Download</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                                           
+
+                            </div>
+                        </li>
+                          <li>
+                           <div class="d-flex align-items-center gap-3">
+                            <p class="mb-0 ct_text_clr_AFB6B2 ct_fw_600">2</p>
+                             <div class="ct_drums_song_palyer">
+                                <img src="assets/img/user_img_1.png" alt="">
+                                <div>
+                                    <h4 class="ct_fs_16 ct_fw_600 text-white mb-1">Mistletoe</h4>
+                                    <p class="mb-0 text-white opacity-75">Justin Bieber</p>
+                                </div>
+                            </div>
+                           </div>
+                            <div class="d-flex align-items-center gap-3">
+                                <span class="text-white text-nowrap">3:54</span>
+                                <button class="ct_play_btn">
+                                <img src="assets/img/play_icon.png" alt="">
+                            </button>
+                            <div class="dropdown ct_mix_dropdown">
+                                <i class="fa-solid fa-ellipsis text-white" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                 <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.5 6.8V13.6M14.8571 8.4L12.5 6L10.1429 8.4M7 12.4V16.4C7 16.8243 7.16556 17.2313 7.46026 17.5314C7.75496 17.8314 8.15466 18 8.57143 18H16.4286C16.8453 18 17.245 17.8314 17.5397 17.5314C17.8344 17.2313 18 16.8243 18 16.4V12.4" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+                                Share</a>
+                                </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#" data-bs-target="#delete_modal" data-bs-toggle="modal">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.25643 8.67039L8.62703 17.1157C8.68972 17.5023 8.88492 17.8537 9.17786 18.1072C9.4708 18.3607 9.84245 18.4999 10.2266 18.5H12.3983M16.7429 8.67039L15.373 17.1157C15.3103 17.5023 15.1151 17.8537 14.8221 18.1072C14.5292 18.3607 14.1576 18.4999 13.7734 18.5H11.6017M10.717 11.9147V15.2557M13.283 11.9147V15.2557M6 8.67039H18M13.8013 8.67039V7.49256C13.8013 7.22931 13.6988 6.97685 13.5163 6.79071C13.3339 6.60457 13.0864 6.5 12.8283 6.5H11.1717C10.9136 6.5 10.6661 6.60457 10.4837 6.79071C10.3012 6.97685 10.1987 7.22931 10.1987 7.49256V8.67039H13.8013Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+
+                                        Delete</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 15.4063V16.1774C6 16.7934 6.23705 17.3842 6.65901 17.8197C7.08097 18.2553 7.65326 18.5 8.25 18.5H15.75C16.3467 18.5 16.919 18.2553 17.341 17.8197C17.7629 17.3842 18 16.7934 18 16.1774V15.4032M12 6.5V15.0161M9.375 12.3065L12 15.0161L14.625 12.3065" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+
+
+                                        Download</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                                           
+
+                            </div>
+                        </li>
+                          <li>
+                           <div class="d-flex align-items-center gap-3">
+                            <p class="mb-0 ct_text_clr_AFB6B2 ct_fw_600">3</p>
                              <div class="ct_drums_song_palyer">
                                 <img src="assets/img/user_img_1.png" alt="">
                                 <div>
@@ -287,7 +438,7 @@
             aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                <div class="modal-content ct_border_radius_20">
-                  <div class="modal-body bg-black p-5 ">
+                  <div class="modal-body  p-5 ">
                      <div class="ct_delete_post_modal">
                         <figure>
                            <div class="d-flex justify-content-between gap-2">

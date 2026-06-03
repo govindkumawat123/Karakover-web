@@ -1,8 +1,26 @@
+@media screen and (max-width:1199px){
+    .ct_reverse_col_1199{
+        flex-direction: column-reverse;
+    }
+}
+
 @media screen and (max-width:991px){
     .ct_bottom_player{
         margin-left: 0px;
         width: 100%;
     }
+    .ct_login_left{
+        display: none;
+    }
+    .ct_login_bg{
+        grid-template-columns: auto;
+    }
+    .ct_right_login{
+        padding-inline: 30px;
+    }
+  .ct_reverse_col{
+    flex-direction: column-reverse;
+  }
 }
 @media screen and (max-width:767px){
     .ct_onboarding_bg{
@@ -30,5 +48,27 @@
     .ct_drums_bg_black{
         padding: 30px 15px;
     }
+    .ct_btn_outline{
+        padding-inline: 15px;
+    }
 }
 
+@media screen and (max-width:575px){
+    .ct_coards_action_btn{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: center;
+    }
+    .ct_coards_action_btn li{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .ct_coards_action_btn li p{
+        font-size: 12px !important;
+    }
+    .ct_play_btn_50 {
+        width: 40px;
+        height: 40px;
+    }
+}
