@@ -518,6 +518,10 @@ border-radius: 50px;
 border-bottom: none;
 }
 
+.ct_close_icon {
+      filter: invert(1);
+}
+
 
 @media screen and (max-width: 1399px) {
     .upgrade_subs_card{
