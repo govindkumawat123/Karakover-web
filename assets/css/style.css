@@ -42,6 +42,11 @@
         -moz-appearance: textfield;
     }
 
+
+    .ct_cursor_pointer{
+        cursor: pointer;
+    }
+
     /* All font Weight Css S */
     .ct_fw_300 {
         font-weight: 300;
@@ -231,7 +236,7 @@
 
 /* Login css S */
 .ct_input:focus ~ i{
-    color: #000;
+    color: #fff;
 }
 .ct_login_bg {
     background: url(../img/loginbg.jpg);
@@ -1752,7 +1757,7 @@ button.ct_cstm_btn {
 
 .screen-loader-center .box {
   height: 40px;
-  top: 40%;
+  top: 50%;
   left: 50%;
   align-items: center;
   position: absolute;
@@ -1797,4 +1802,18 @@ button.ct_cstm_btn {
   100% {
     height: 0px;
   }
+}
+
+
+.screen-loader-center {
+    background: #202020;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

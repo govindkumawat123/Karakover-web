@@ -71,4 +71,12 @@
         width: 40px;
         height: 40px;
     }
+
+
+    .ct_flex_col_575{
+        flex-direction: column;
+    }
+    .ct_w_100_575{
+        width: 100%;
+    }
 }

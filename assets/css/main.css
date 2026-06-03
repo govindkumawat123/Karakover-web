@@ -470,6 +470,7 @@ border-radius: 50px;
 .plan-btn{
    width: 100%;
     color: #fff;
+    font-size: 16px;
   border: none;
     padding: 16px 20px;
     border-radius: 16px;
@@ -543,7 +544,7 @@ border-bottom: none;
 
   .ct_show .ct_side_bar {
     left: 0px;
-    z-index: 99;
+    z-index: 999;
   }
 
   .ct_close_sidebar {

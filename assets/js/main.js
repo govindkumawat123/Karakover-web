@@ -59,3 +59,13 @@ $(document).ready(function () {
     },
   });
 });
+
+
+
+
+$(window).on("load", function () {
+
+  $(".screen-loader-center").fadeOut();
+
+});
+ 
